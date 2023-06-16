@@ -118,6 +118,7 @@ button {
 }
 
 .eng {
+    text-transform: uppercase;
     font-family: 'Hammersmith One';
     font-style: normal;
     font-weight: 400;

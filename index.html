@@ -37,12 +37,14 @@
                 </li>
               </ul>
             </nav>
-            <button class="header-btn" type="button">Увійти</button>
+            <button class="header-btn" type="button">
+              Увійти
+            </button>
           </div>
 
           <div class="header-right">
             <p class="eng">Eng</p>
-            <img class="switcher" src="./img/switcher-s.png" alt="switcher-s" />
+            <img class="switcher" src="./Avatar/img/switcher-s.png" alt="switcher-s" />
             <p class="eng">Ua</p>
           </div>
         </div>
@@ -61,7 +63,9 @@
                     Säwem nìayoeng! <br />
                   </p>
                 </li>
-                <li class="img-strila"><img src="./img/white-thing.png" alt="strila" /></li>
+                <li class="img-strila">
+                  <img src="./img/white-thing.png" alt="strila" />
+                </li>
                 <li class="main-text">
                   <p>
                     Хоробрий воїне, звертаюсь до тебе!<br />
@@ -72,7 +76,11 @@
                   </p>
                 </li>
                 <li>
-                  <button class="main-thing-btn" type="button">
+                  <button
+                    data-open-form-modal
+                    class="main-thing-btn"
+                    type="button"
+                  >
                     Приєднатися до клану
                   </button>
                 </li>
@@ -123,7 +131,9 @@
 
         <section class="trailer">
           <h2 hidden>Це для семантики</h2>
-          <button class="trailer-btn" type="button">Дивитись трейлер</button>
+          <button class="trailer-btn" type="button" data-open-video>
+            Дивитись трейлер
+          </button>
         </section>
 
         <section class="quotes">
@@ -211,7 +221,7 @@
       </main>
       <!-- Footer  -->
       <footer class="footer">
-        <div class=" footer-container content-container">
+        <div class="footer-container content-container">
           <!-- footer left -->
           <div class="footer-left">
             <a href="./index.html">
@@ -224,16 +234,16 @@
             <ul class="footer-list">
               <li class="footer-list-item">
                 <span class="footer-span">Q&A E-mail</span>
-                <div class="first-border"></div
-                ><a class="footer-email" href="mailto:avatartwowqa@gmail.com"
+                <div class="first-border"></div>
+                <a class="footer-email" href="mailto:avatartwowqa@gmail.com"
                   >avatartwowqa@gmail.com</a
                 >
               </li>
               <li class="footer-list-item-two">
                 <span class="footer-span">Cooperation E-mail</span>
-                <div class="first-border-two"></div
-                ><a class="footer-email" href="mailto:avatartwowqa@gmail.com"
-                  >avatartwowqa@gmail.com</a
+                <div class="first-border-two"></div>
+                <a class="footer-email" href="mailto:avatartwowcoop@gmail.com"
+                  >avatartwowcoop@gmail.com</a
                 >
               </li>
             </ul>
@@ -244,6 +254,74 @@
           </div>
         </div>
       </footer>
+      <div class="backdrop is-hidden" data-form-backdrop>
+        <form class="modal-form">
+          <button class="close-btn" type="button" data-close-form-modal>
+            <svg class="close-svg" width="14" height="14">
+              <use href="./img/icons/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+
+          <ul class="modal-list">
+            <li class="modal-list-item">
+              <label class="modal-label"
+                >Ім’я <input class="modal-input" type="text"
+              /></label>
+            </li>
+            <li class="modal-list-item">
+              <label class="modal-label"
+                >Email
+                <input
+                  class="modal-input"
+                  required
+                  type="email"
+                  placeholder="example@gmail.com"
+              /></label>
+            </li>
+          </ul>
+          <button class="join-btn" type="button" data-open-info-modal>
+            Приєднатися <br />
+            до клану
+          </button>
+        </form>
+      </div>
+
+      <div class="backdrop is-hidden" data-info-backdrop>
+        <section class="info-modal">
+          <button class="close-btn" type="button" data-close-info-modal>
+            <svg class="close-svg-info" width="14" height="14">
+              <use href="./img/icons/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <h3 class="info-title">Вітаємо у нашому клані</h3>
+          <p class="info-text">
+            Твій Банші вже в дорозі. <br />
+            Скоро побачимось на Пандорі.
+          </p>
+        </section>
+      </div>
     </div>
+
+    <div class="backdrop is-hidden" data-video-backdrop>
+      <form class="content-video">
+        <h3 class="video-title">Трейлер фільму AVATAR</h3>
+        <button class="video-btn" type="button" data-close-video>
+          <svg class="video-svg">
+            <use href="./img/icons/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+
+        <iframe
+          width="700"
+          height="400"
+          src="https://www.youtube.com/embed/d9MyW72ELq0"
+          title="Avatar: The Way of Water | Official Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </form>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>

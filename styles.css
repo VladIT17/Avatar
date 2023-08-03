@@ -150,7 +150,7 @@ button {
 
 .main-thing {
     width: 376px;
-    padding-top: 179px ;
+    padding-top: 179px;
     padding-bottom: 179px;
 }
 
@@ -192,10 +192,171 @@ button {
     align-items: flex-end;
 }
 
+.content-video {
+    width: 900px;
+    padding: 40px 98px 60px 98px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.video-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+}
+
+.video-svg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: none;
+    fill: #0B0E66;
+}
+
+.video-title {
+    color: #1F2426;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .social-item {
     margin-bottom: 24px;
 }
 
+
+.backdrop {
+    width: 1360px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.6s;
+}
+
+.modal-form {
+
+    background-image: url('./img/baground-modal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    padding: 111px 80px 23px;
+    position: fixed;
+    z-index: 100;
+}
+
+.close-btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 16px;
+    right: 16px;
+}
+
+.close-svg {
+    fill: #0B0E66;
+}
+
+
+.modal-list {
+    margin-bottom: 40px;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    color: #0B0E66;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-input {
+    margin-bottom: 12px;
+    outline: none;
+    width: 440px;
+    height: 40px;
+    border: 2px solid #0B0E66;
+    background: #F2EAEA;
+}
+
+.join-btn {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 80px;
+    border-radius: 45px 0px;
+    border: 3px solid #26C7EA;
+    background: #0B0E66;
+    color: #26C7EA;
+    text-align: center;
+    font-family: 'HeadlandOne';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* info modal */
+
+
+
+.info-modal {
+    position: fixed;
+    width: 600px;
+    padding: 58px 112px 172px;
+    background-image: url('./img/info-baground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+.info-title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'HeadlandOne', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 102px;
+}
+
+.info-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'HeadlandOne', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.close-svg-info {
+    fill: #FFF;
+}
+
+/* end */
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 
 .quotes {
     display: flex;
@@ -415,7 +576,7 @@ button {
 }
 
 .footer-logo {
-    padding: 76px  0 76px 0;
+    padding: 76px 0 76px 0;
 }
 
 
